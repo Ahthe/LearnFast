@@ -360,6 +360,6 @@ to public
 using ((( SELECT auth.uid() AS uid) = user_id));
 
 
-CREATE TRIGGER create_embedding AFTER INSERT OR UPDATE ON public.fragment FOR EACH ROW EXECUTE FUNCTION supabase_functions.http_request('http://localhost:3000', 'POST', '{"Content-type":"application/json"}', '{}', '1000');
+--CREATE TRIGGER create_embedding AFTER INSERT OR UPDATE ON public.fragment FOR EACH ROW EXECUTE FUNCTION supabase_functions.http_request('http://localhost:3000', 'POST', '{"Content-type":"application/json"}', '{}', '1000');
 
 
